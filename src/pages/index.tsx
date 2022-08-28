@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
 import classNames from 'classnames';
 import { ImageWrapper } from '@/components/imageWrapper';
+import MyDropdown from '@/components/myDropdown';
 export default function Home() {
   const a = true;
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           src={`https://lmg.jj20.com/up/allimg/611/010913163107/130109163107-7-1200.jpg`}
           alt={`example`}
         ></ImageWrapper>
+        <MyDropdown></MyDropdown>
       </div>
     </div>
   );
