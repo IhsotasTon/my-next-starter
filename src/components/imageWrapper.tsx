@@ -1,5 +1,5 @@
 import React, { FC, useRef, useState } from 'react';
-import Image, { ImageLoader } from 'next/image';
+import Image, { ImageLoader } from 'next/legacy/image';
 import classNames from 'classnames';
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 export const ImageWrapper: FC<Props> = ({ src, className, alt, ...props }) => {
   const container = useRef(null);
   return (
-    <div className={classNames(`${className} relative`)} ref={container}>
+    <div className={`${className} relative`} ref={container}>
       <Image
         src={src}
         alt={alt}
