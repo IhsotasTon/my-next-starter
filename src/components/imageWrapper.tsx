@@ -14,8 +14,8 @@ export const ImageWrapper: FC<Props> = ({ src, className, alt, ...props }) => {
       <Image
         src={src}
         alt={alt}
-        layout="fill"
-        objectFit="contain"
+        fill={true}
+        objectFit="cover"
         onLoad={({ target }) => {
           const { naturalWidth, naturalHeight } = target as HTMLImageElement;
           if (container.current) {
